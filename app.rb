@@ -15,7 +15,9 @@ class Application < Sinatra::Base
   end
 
   get '/names' do
-    return 'Mike'
+    string = params[:names]
+
+    return string.gsub(",", ", ")
   end
 
   post '/submit' do

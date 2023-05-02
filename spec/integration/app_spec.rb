@@ -16,5 +16,17 @@ RSpec.describe Application do
       expect(response.body).to eq('Mike')
     end
   end
+
+  context "GET /names" do
+    it 'returns correctly for 2 names in argument' do
+      response = get('/names?names=Mike,Will')
+
+      #p response
+      expect(response.status).to eq(200)
+      expect(response.body).to eq('Mike, Will')
+    end
+  end
+
+
 end
 
