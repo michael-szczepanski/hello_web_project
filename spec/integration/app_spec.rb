@@ -27,6 +27,21 @@ RSpec.describe Application do
     end
   end
 
+  context "POST /sort-names" do
+    it "returns one name without a comma" do
+      response = post('/sort-names', names: 'Joe')
+
+      expect(response.status).to eq(200)
+      expect(response.body).to eq('Joe')
+    end
+
+    it "returns a correctly alphabetised list" do
+      response = post('/sort-names', names:'Joe,Alice,Zoe,Julia,Kieran')
+
+      expect(response.status).to eq(200)
+      expect(response.body).to eq('Alice,Joe,Julia,Kieran,Zoe')
+    end
+  end
 
 end
 

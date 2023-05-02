@@ -26,4 +26,11 @@ class Application < Sinatra::Base
 
     return "Thanks #{name}, you sent this message: #{message}"
   end
+
+  post '/sort-names' do
+    params_str = params[:names]
+    params_arr = params_str.split(',')
+    params_arr.sort!
+    return params_arr.join(',')
+  end
 end
