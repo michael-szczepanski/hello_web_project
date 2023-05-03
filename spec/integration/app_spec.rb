@@ -50,6 +50,13 @@ RSpec.describe Application do
       expect(response.status).to eq 200
       expect(response.body).to include('<h1>Hello, Mike!</h1>')
     end
+    
+    it "changes the code based on name param" do
+      response = get('/hello', name:'Evan')
+      
+      expect(response.status).to eq 200
+      expect(response.body).to include('<h1>Hello, Evan!</h1>')
+    end
   end
 end
 

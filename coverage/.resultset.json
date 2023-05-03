@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/michael-szczepanski/Documents/Projects/hello_web_project/spec/integration/app_spec.rb": {
+      "/Users/evanthomas/projects/makers/week_4/pairing/hello_web_project/spec/integration/app_spec.rb": {
         "lines": [
           1,
           1,
@@ -10,7 +10,7 @@
           1,
           1,
           null,
-          6,
+          7,
           null,
           1,
           1,
@@ -49,6 +49,13 @@
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           null,
@@ -60,7 +67,7 @@
           null
         ]
       },
-      "/Users/michael-szczepanski/Documents/Projects/hello_web_project/app.rb": {
+      "/Users/evanthomas/projects/makers/week_4/pairing/hello_web_project/app.rb": {
         "lines": [
           1,
           1,
@@ -73,9 +80,9 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
-          1,
+          2,
           null,
           null,
           1,
@@ -101,6 +108,6 @@
         ]
       }
     },
-    "timestamp": 1683117315
+    "timestamp": 1683117801
   }
 }

@@ -96,3 +96,20 @@ Expected response:
     <h1>Hello, Mike!</h1>
   </body>
 </html>
+
+4. 
+   
+Request:
+
+GET /hello
+
+params: Evan
+
+Expected response:
+
+<html>
+  <head></head>
+  <body>
+    <h1>Hello, Evan!</h1>
+  </body>
+</html>
