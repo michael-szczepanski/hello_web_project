@@ -79,3 +79,20 @@ params: Joe
 Expected reponse:
 
 Joe
+
+3. 
+   
+Request:
+
+GET /hello
+
+params: Mike
+
+Expected response:
+
+<html>
+  <head></head>
+  <body>
+    <h1>Hello, Mike!</h1>
+  </body>
+</html>

@@ -43,5 +43,13 @@ RSpec.describe Application do
     end
   end
 
+  context "GET /hello" do
+    it "contains the html code" do
+      response = get('/hello', name:'Mike')
+
+      expect(response.status).to eq 200
+      expect(response.body).to include('<h1>Hello, Mike!</h1>')
+    end
+  end
 end
 
